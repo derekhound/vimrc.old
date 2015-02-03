@@ -255,7 +255,12 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite * :call DeleteTrailingWS()
+"autocmd BufWrite * :call DeleteTrailingWS()
+
+" Highlight trailing white spaces
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
@@ -473,7 +478,7 @@ let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
 
 " Quit on opening files from the tree
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=0
 
 " Highlight the selected entry in the tree
 let NERDTreeHighlightCursorline=1

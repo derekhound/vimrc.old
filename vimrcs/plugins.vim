@@ -36,7 +36,7 @@ let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
 
 " Quit on opening files from the tree
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=0
 
 " Highlight the selected entry in the tree
 let NERDTreeHighlightCursorline=1

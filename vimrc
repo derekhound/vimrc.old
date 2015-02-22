@@ -87,9 +87,9 @@ set t_vb=
 set tm=500
 
 " Lines with equal indent form a fold
-:set foldmethod=indent
+":set foldmethod=indent
 " When opening a file, open all fold
-au BufRead,BufNewFile * normal zR
+"au BufRead,BufNewFile * normal zR
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
